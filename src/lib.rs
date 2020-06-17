@@ -40,7 +40,7 @@ impl MatcherTrait for ExtendedRegexpMatcher {
 }
 
 // 型を意識せずに使えるMatcher
-enum Matcher {
+pub enum Matcher {
     ExtendedRegexp(ExtendedRegexpMatcher),
     FixedStrings(FixedStringsMatcher),
 }
